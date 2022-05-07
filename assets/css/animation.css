@@ -1,0 +1,40 @@
+@keyframes motion {
+    0% {width: 40px; height: 40px; opacity: 0;}
+    50% {opacity: 0.9;}
+    100% {width: 100px; height: 100px; opacity: 0;}
+}
+.ani {
+    opacity: 0;
+    transition: all .6s ease-in-out;
+}
+.ani.top{
+    transform: translateY(-50px);
+}
+.ani.bottom {
+    transform: translateY(50px);
+}
+.ani.left {
+    transform: translateX(-50px);
+}
+.ani.right {
+    transform: translateX(50px);
+}
+.ani.scale {
+    transform: scale(1.1,1.1);
+}
+.ani.active {
+    transform: translate(0px,0px) scale(1,1);
+    opacity: 1;
+}
+.d02 {
+    transition-delay: 0.2s;
+}
+.d04 {
+    transition-delay: 0.4s;
+}
+.d06 {
+    transition-delay: 0.6s;
+}
+.d08 {
+    transition-delay: 0.8s;
+}
